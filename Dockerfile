@@ -1,8 +1,8 @@
 FROM java:openjdk-8u111-jdk
 
-LABEL maintainer="Wadjetz <egor.neon@gmail.com>"
+LABEL maintainer="Samy Dindane <samy@dindane.com>"
 
-RUN curl -sL https://deb.nodesource.com/setup_9.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     apt-get install -y nodejs bc && \
     wget -nv http://dl.bintray.com/sbt/debian/sbt-1.0.3.deb && \
     dpkg -i sbt-1.0.3.deb && \
